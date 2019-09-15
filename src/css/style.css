@@ -9,7 +9,6 @@ body {
 
 .news-div {
   background: grey;
-  margin-bottom: 2em;
   margin: 0 auto;
   width: 80%;
   padding: 1em; }
@@ -18,3 +17,14 @@ body {
   display: block;
   width: 90%;
   margin: 1em; }
+
+.show-news-div {
+  background: #55acb8;
+  margin: 0 auto;
+  width: 80%;
+  padding: 2em 1em 1em;
+  margin-top: 2em;
+  text-align: center; }
+
+li {
+  list-style-type: none; }

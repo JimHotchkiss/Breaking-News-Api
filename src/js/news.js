@@ -10,9 +10,27 @@ getNews = () => {
     fetch('https://newsapi.org/v2///top-headlines?' + 'country=us&' + 'apiKey=bcd9264c4d4646b5a22d288a9a796d3d')
     .then(response => response.json())
     .then(news => {
-        console.log(news.articles[0].source.name)
+        showNews(news);
     })
 })
+
+showNews = (news) => {
+    let newsArray = news.articles;
+    let ulNews = document.getElementById('ulNews');
+    // Create li Tag
+    
+    newsArray.forEach((story) => {
+        let liTag = document.createElement('li');
+        let anchorTag = document.createElement('a');
+        anchorTag.setAttribute('href', '#');
+         anchorTag.appendChild
+         (document.createTextNode(story.source.name));
+         liTag.appendChild(anchorTag);
+         ulNews.appendChild(liTag);
+        
+        
+    })
+}
 
 }
 
