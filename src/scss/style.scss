@@ -1,0 +1,30 @@
+$bg-color: #333;
+$font-color: white;
+$primary-color: #008ed6;
+
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.navbar {
+  border-bottom: $primary-color 3px solid;
+  opacity: 0.8;
+  margin-bottom: 2em;
+}
+
+.news-div {
+  background: grey;
+  margin-bottom: 2em;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em;
+}
+
+.news-div button {
+  display: block;
+  width: 90%;
+  margin: 1em;
+}
+
+

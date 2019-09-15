@@ -1,0 +1,20 @@
+body {
+  background: #333;
+  color: white; }
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8;
+  margin-bottom: 2em; }
+
+.news-div {
+  background: grey;
+  margin-bottom: 2em;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em; }
+
+.news-div button {
+  display: block;
+  width: 90%;
+  margin: 1em; }
