@@ -1,6 +1,8 @@
 $(() => {
     //clickHandlers();
     getNews();
+    newsTitle();
+    newsDescription();
   });
 
 getNews = () => {
@@ -17,35 +19,46 @@ getNews = () => {
 showNews = (news) => {
     let newsArray = news.articles;
     let ulNews = document.getElementById('ulNews');
-    // Create li Tag
-    
     newsArray.forEach((story) => {
-        let liTag = document.createElement('li');
-        let anchorTag = document.createElement('a');
-        anchorTag.setAttribute('href', '#');
-         anchorTag.appendChild
-         (document.createTextNode(story.source.name));
-         liTag.appendChild(anchorTag);
-         ulNews.appendChild(liTag);
-        
-        
+        newsTitle(story);
     })
+  }
+
+  newsTitle = (story) => {
+    let liTag = document.createElement('li');
+    // Set Source name
+    let anchorTag = document.createElement('a');
+    anchorTag.setAttribute('target', '_blank');
+    anchorTag.setAttribute('href', story.url);
+    anchorTag.setAttribute('class', 'anchor-tag');
+     anchorTag.appendChild
+     (document.createTextNode(story.source.name));
+     liTag.appendChild(anchorTag);
+     ulNews.appendChild(liTag);
+     newsDescription(story);
+  }
+
+  newsDescription = (story) => {
+      // Set Title
+      let titleDiv = document.createElement('div');
+      let titleP = document.createElement('p');
+      // Insert text
+      titleP.appendChild
+      (document.createTextNode(story.description));
+      // Insert P tag into div
+      titleDiv.appendChild(titleP);
+      ulNews.appendChild(titleDiv);
+  }
 }
 
-}
+
 
   
 
 
 
-//var url = 'https://newsapi.org/v2///top-headlines?' +
-//          'country=us&' +
-//          'apiKey=bcd9264c4d4646b5a22//d288a9a796d3d';
-//var req = new Request(url);
-//fetch(req)
-//    .then(function(response) {
-//        console.log(response.json());
-//    })
+
+
 
 
  

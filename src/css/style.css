@@ -28,3 +28,10 @@ body {
 
 li {
   list-style-type: none; }
+
+a {
+  color: #661212; }
+
+a:hover {
+  color: red;
+  text-decoration: none; }
