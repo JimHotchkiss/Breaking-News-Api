@@ -30,12 +30,16 @@ body {
   background: rgb(85, 172, 184);
   margin: 0 auto;
   width: 80%;
-  padding: 2em 1em 1em ;
+  padding: 2em 2em 1em 0em ;
   margin-top: 2em;
   text-align: center;
 }
 li {
   list-style-type: none;
+}
+.list-group-item {
+  background: rgb(214, 206, 206);
+  margin: 1em 2em 1em 2em;
 }
 a {
   color: rgb(102, 18, 18);

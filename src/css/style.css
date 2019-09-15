@@ -22,12 +22,16 @@ body {
   background: #55acb8;
   margin: 0 auto;
   width: 80%;
-  padding: 2em 1em 1em;
+  padding: 2em 2em 1em 0em;
   margin-top: 2em;
   text-align: center; }
 
 li {
   list-style-type: none; }
+
+.list-group-item {
+  background: #d6cece;
+  margin: 1em 2em 1em 2em; }
 
 a {
   color: #661212; }

@@ -3,6 +3,7 @@ $(() => {
     getNews();
     newsTitle();
     newsDescription();
+    publishedAt();
   });
 
 getNews = () => {
@@ -16,7 +17,7 @@ getNews = () => {
     })
 })
 
-showNews = (news) => {
+  showNews = (news) => {
     let newsArray = news.articles;
     let ulNews = document.getElementById('ulNews');
     newsArray.forEach((story) => {
@@ -26,6 +27,7 @@ showNews = (news) => {
 
   newsTitle = (story) => {
     let liTag = document.createElement('li');
+    liTag.setAttribute('class', 'list-group-item');
     // Set Source name
     let anchorTag = document.createElement('a');
     anchorTag.setAttribute('target', '_blank');
@@ -39,6 +41,7 @@ showNews = (news) => {
   }
 
   newsDescription = (story) => {
+      console.log(story.publishedAt)
       // Set Title
       let titleDiv = document.createElement('div');
       let titleP = document.createElement('p');
@@ -48,6 +51,14 @@ showNews = (news) => {
       // Insert P tag into div
       titleDiv.appendChild(titleP);
       ulNews.appendChild(titleDiv);
+      publishedAt(story);
+  }
+
+  publishedAt = (story) => {
+    let date = new Date(story.publishedAt);
+    date.toString() 
+    console.log(date)
+
   }
 }
 
