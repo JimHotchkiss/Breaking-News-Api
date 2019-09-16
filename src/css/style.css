@@ -43,3 +43,13 @@ a {
 a:hover {
   color: red;
   text-decoration: none; }
+
+.title-h {
+  color: #333; }
+
+.time-p {
+  color: rgba(199, 219, 219, 0.788); }
+
+.time-statement {
+  color: rgba(199, 219, 219, 0.788);
+  margin-bottom: 0; }
