@@ -21,7 +21,7 @@ body {
   margin: 1em; }
 
 .show-news-div {
-  background: #55acb8;
+  background: rgba(175, 175, 175, 0.959);
   margin: 0 auto;
   width: 80%;
   padding: 2em 2em 1em 0em;
@@ -38,7 +38,7 @@ li {
   margin: 1em 2em 1em 2em; }
 
 a {
-  color: #661212; }
+  color: #008ed6; }
 
 a:hover {
   color: red;

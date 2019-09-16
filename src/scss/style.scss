@@ -29,7 +29,7 @@ body {
 }
 
 .show-news-div {
-  background: rgb(85, 172, 184);
+  background: rgba(175, 175, 175, 0.959);
   margin: 0 auto;
   width: 80%;
   padding: 2em 2em 1em 0em ;
@@ -47,7 +47,7 @@ li {
   margin: 1em 2em 1em 2em;
 }
 a {
-  color: rgb(102, 18, 18);
+  color: $primary-color;
 }
 
 a:hover {
