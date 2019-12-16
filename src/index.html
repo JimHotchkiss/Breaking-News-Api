@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>Breaking News API</title>
-    </head>
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Breaking News API</title>
+  </head>
 
-    <body id = "home">
-        <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">Breaking News</a>
-                <button class="navbar-toggler" data-toggle = "collapse" data-target = "#navbarCollapse" >
-                    <span class="navbar-toggler-icon">
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id = "navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                       <li class="nav-item">
-                            <a href="/sports.html" class="nav-link">Sports</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/culture.html" class="nav-link">Culture</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/business.html" class="nav-link">Business</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/technology.html" class="nav-link">Technology</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- News Section -->
-        <div class= "news-div" id="newsDiv">
-            <button type="button" class="btn btn-primary btn-lg" id = "newsButton">'Click' For Breaking News</button>
+  <body id="home">
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Breaking News</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="./sports.html" class="nav-link">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a href="./culture.html" class="nav-link">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a href="./business.html" class="nav-link">Business</a>
+            </li>
+            <li class="nav-item">
+              <a href="./technology.html" class="nav-link">Technology</a>
+            </li>
+          </ul>
         </div>
-        <div class = "show-news-div"id="showNews">
-            <h3 class="headline">Breaking News Stories</h3>
-            <ul id="ulNews">
-                <li class="liNews"></li>
-            </ul>
-            <!-- News data goes here -->
-        </div>
-        
+      </div>
+    </nav>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/news.js"></script>
-    </body>
+    <!-- News Section -->
+    <div class="news-div" id="newsDiv">
+      <button type="button" class="btn btn-primary btn-lg" id="newsButton">
+        'Click' For Breaking News
+      </button>
+    </div>
+    <div class="show-news-div" id="showNews">
+      <h3 class="headline">Breaking News Stories</h3>
+      <ul id="ulNews">
+        <li class="liNews"></li>
+      </ul>
+      <!-- News data goes here -->
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/news.js"></script>
+  </body>
 </html>
